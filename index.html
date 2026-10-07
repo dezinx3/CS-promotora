@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CS Promotora | Crédito com conversa clara, em Quixadá</title>
+  <meta name="description" content="CS Promotora: orientação em crédito consignado INSS, servidor público, CLT e outras soluções. Atendimento na loja em Quixadá–CE e pelo WhatsApp.">
+  <meta name="theme-color" content="#eef3f4">
+
+  <!-- Política de segurança de conteúdo: ajuste se mudar o domínio, as fontes ou incluir novos serviços -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://www.instagram.com; connect-src 'self' https://www.instagram.com; frame-src https://www.instagram.com https://instagram.com; img-src 'self' data: https:; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><link rel="stylesheet" href="noscript.css"></noscript>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ ABERTURA / SPLASH ============ -->
+  <div class="splash" id="splash" aria-label="CS Promotora" role="status">
+    <div class="splash__grid" aria-hidden="true"></div>
+    <div class="splash__glow splash__glow--one" aria-hidden="true"></div>
+    <div class="splash__glow splash__glow--two" aria-hidden="true"></div>
+    <div class="splash__content">
+      <div class="splash__orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <img class="splash__logo" src="assets/logo-cs.png" alt="CS Promotora" width="810" height="409">
+      <div class="splash__line" aria-hidden="true"><span></span></div>
+      <p>Seu crédito com segurança</p>
+    </div>
+  </div>
+
+  <!-- Ícones reutilizáveis -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.4a1.8 1.8 0 0 0 .2-.4.4.4 0 0 0 0-.4c-.1-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.7 4.7 0 0 0 1 2.5 10.6 10.6 0 0 0 4.1 3.6c.6.2 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1 2.5 2.5 0 0 0 1.6-1.1 1.9 1.9 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.3Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.2 4.2L19 7"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-up-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor"/></g></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 8 8.5 6 8.5-6"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 5.5h16v10H12l-5 4v-4H4z"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+
+      <!-- Silhueta de serra (inspirada nos monólitos de Quixadá), usada como divisor de seções -->
+      <symbol id="serra-fundo" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0 220V138C50 138 80 96 132 94C186 92 206 132 262 134C322 136 340 58 420 38C500 18 546 72 566 104C596 146 650 154 712 142C772 130 800 92 858 72C926 50 986 82 1016 120C1046 152 1106 150 1166 128C1236 104 1266 50 1326 44C1384 40 1414 84 1440 96V220Z"/></symbol>
+      <symbol id="serra-frente" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0 220V170C70 170 110 132 176 132C240 132 262 168 330 168C410 168 440 108 516 104C596 100 620 158 700 166C780 174 820 136 892 128C964 120 1000 160 1076 164C1160 168 1200 122 1276 120C1350 118 1394 154 1440 158V220Z"/></symbol>
+    </defs>
+  </svg>
+
+
+  <!-- Camada visual atmosférica: partículas, faíscas e ondas -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--1"></span>
+    <span class="ambient__orb ambient__orb--2"></span>
+    <span class="ambient__orb ambient__orb--3"></span>
+    <div class="ambient__sparks" id="ambientSparks"></div>
+    <div class="ambient__wave ambient__wave--1"></div>
+    <div class="ambient__wave ambient__wave--2"></div>
+  </div>
+
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="topbar" id="topo">
+    <div class="topbar__inner">
+      <a class="logo" href="#topo" aria-label="CS Promotora, início">
+        <img class="logo__img" src="assets/logo-cs.png" alt="CS Promotora" width="810" height="409">
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <span class="menu__indicator" id="menuIndicator" aria-hidden="true"></span>
+        <a href="#sobre" data-section="sobre">Sobre</a>
+        <a href="#modalidades" data-section="modalidades">Modalidades</a>
+        <a href="#passo-a-passo" data-section="passo-a-passo">Passo a passo</a>
+        <a href="#instagram" data-section="instagram">Instagram</a>
+        <a href="#duvidas" data-section="duvidas">Dúvidas</a>
+        <a href="#simulacao" data-section="simulacao">Simulação</a>
+        <a href="#contato" data-section="contato">Contato</a>
+      </nav>
+
+      <a class="btn btn--dark btn--sm js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Vim pelo site da CS Promotora e gostaria de conversar.">
+        <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ SOBRE ============ -->
+    <section class="hero" aria-labelledby="hero-titulo" id="sobre">
+      <span class="hero__sol" aria-hidden="true"></span>
+
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="hero__local in in-1">
+            <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+            Loja no Centro de Quixadá, Ceará
+          </p>
+
+          <h1 id="hero-titulo" class="in in-2">Crédito fica mais leve quando alguém explica com calma.</h1>
+
+          <p class="hero__lead in in-3">
+            Há mais de 12 anos a CS orienta quem procura consignado e outras soluções de crédito. Você conversa com pessoas de verdade, na loja ou pelo WhatsApp, e decide no seu tempo.
+          </p>
+
+          <fieldset class="picker in in-4">
+            <legend>Comece pelo seu perfil</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="perfil" value="aposentado(a) ou pensionista do INSS"><span>Aposentado ou pensionista</span></label>
+              <label class="chip"><input type="radio" name="perfil" value="servidor(a) público(a)"><span>Servidor público</span></label>
+              <label class="chip"><input type="radio" name="perfil" value="trabalhador(a) CLT"><span>Trabalhador CLT</span></label>
+              <label class="chip"><input type="radio" name="perfil" value="pessoa com outro perfil"><span>Outro perfil</span></label>
+            </div>
+            <div class="picker__foot">
+              <a class="btn btn--primary js-whatsapp" id="pickerCta" href="https://wa.me/558896886218" data-wa="Olá! Vim pelo site da CS Promotora e gostaria de conversar sobre crédito.">
+                <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
+                <span>Chamar no WhatsApp</span>
+              </a>
+              <p id="pickerHint">Escolha uma opção e a conversa já abre com o seu perfil.</p>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="hero__media in in-5">
+          <div class="arch image-frame">
+            <!-- FOTO 01: substitua assets/foto-hero.jpg pela foto principal (equipe ou atendimento). Formato vertical funciona melhor. -->
+            <img src="assets/foto-hero.jpg" alt="Equipe da CS Promotora atendendo um cliente" width="900" height="1125" loading="eager">
+            <div class="image-fallback"><span>CS</span><small>Foto principal<br>assets/foto-hero.jpg</small></div>
+          </div>
+          <p class="hero__selo">
+            <strong>Travessa Tiradentes, 181</strong>
+            <span>Próximo ao Bradesco</span>
+          </p>
+        </div>
+      </div>
+
+      <svg class="serra serra--base" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+        <use class="serra__fundo" href="#serra-fundo"/>
+        <use class="serra__frente" href="#serra-frente"/>
+      </svg>
+    </section>
+
+    <!-- ============ INSTAGRAM / PUBLICAÇÕES ============ -->
+    <section class="instagram-section" id="instagram" aria-labelledby="instagram-titulo">
+      <div class="wrap">
+        <div class="section-heading section-heading--social reveal">
+          <div>
+            <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg> Conteúdo da CS</p>
+            <h2 id="instagram-titulo">O que acontece por aqui também aparece no nosso Instagram.</h2>
+          </div>
+          <a class="btn btn--dark" href="https://www.instagram.com/CS_promotora/" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>
+            <span>@CS_promotora</span>
+          </a>
+        </div>
+
+        <div class="social-grid social-grid--instagram" id="instagramGrid">
+          <article class="social-card social-card--instagram reveal" data-post-url="https://www.instagram.com/p/CqQuZ5PObM4/">
+            <button class="social-card__thumb social-card__thumb--image" type="button" data-instagram-open
+              data-embed="https://www.instagram.com/p/CqQuZ5PObM4/embed"
+              data-url="https://www.instagram.com/p/CqQuZ5PObM4/" aria-label="Abrir publicação da CS Promotora no Instagram">
+              <img src="https://www.instagram.com/p/CqQuZ5PObM4/media/?size=l" alt="Publicação da CS Promotora: afinal, quem é a CS Promotora?" loading="lazy" referrerpolicy="no-referrer" data-instagram-thumb>
+              <span class="social-card__number">01</span>
+              <span class="social-card__badge social-card__badge--ig"><svg class="ico"><use href="#i-ig"/></svg> Instagram</span>
+            </button>
+            <div class="social-card__body">
+              <small>Publicação da CS Promotora</small>
+              <h3>Afinal, quem é a CS Promotora?</h3>
+              <p>Conheça um pouco mais sobre a CS e acompanhe o conteúdo original publicado no Instagram.</p>
+              <button class="social-link-button" type="button" data-instagram-open data-embed="https://www.instagram.com/p/CqQuZ5PObM4/embed" data-url="https://www.instagram.com/p/CqQuZ5PObM4/">Ver publicação <svg class="ico"><use href="#i-up-right"/></svg></button>
+            </div>
+          </article>
+
+          <article class="social-card social-card--instagram reveal" data-post-url="https://www.instagram.com/reel/CrmAurGrkya/">
+            <button class="social-card__thumb social-card__thumb--reel" type="button" data-instagram-open
+              data-embed="https://www.instagram.com/reel/CrmAurGrkya/embed"
+              data-url="https://www.instagram.com/reel/CrmAurGrkya/" aria-label="Reproduzir Reel da CS Promotora no Instagram">
+              <img src="https://www.instagram.com/reel/CrmAurGrkya/media/?size=l" alt="Capa do Reel da CS Promotora" loading="lazy" referrerpolicy="no-referrer" data-instagram-thumb>
+              <span class="social-card__number">02</span>
+              <span class="social-card__badge social-card__badge--ig"><svg class="ico"><use href="#i-ig"/></svg> Reel</span>
+              <span class="social-card__play" aria-hidden="true"><svg class="ico"><use href="#i-right"/></svg></span>
+            </button>
+            <div class="social-card__body">
+              <small>Reel da CS Promotora</small>
+              <h3>Conteúdo em vídeo</h3>
+              <p>Toque na capa para abrir o Reel em um visual limpo ou continuar diretamente no Instagram.</p>
+              <button class="social-link-button" type="button" data-instagram-open data-embed="https://www.instagram.com/reel/CrmAurGrkya/embed" data-url="https://www.instagram.com/reel/CrmAurGrkya/">Reproduzir Reel <svg class="ico"><use href="#i-right"/></svg></button>
+            </div>
+          </article>
+
+          <article class="social-card social-card--instagram reveal" data-post-url="https://www.instagram.com/reel/DJmecvKtKxD/">
+            <button class="social-card__thumb social-card__thumb--reel" type="button" data-instagram-open
+              data-embed="https://www.instagram.com/reel/DJmecvKtKxD/embed"
+              data-url="https://www.instagram.com/reel/DJmecvKtKxD/" aria-label="Reproduzir Reel da CS Promotora no Instagram">
+              <img src="https://www.instagram.com/reel/DJmecvKtKxD/media/?size=l" alt="Capa do Reel da CS Promotora" loading="lazy" referrerpolicy="no-referrer" data-instagram-thumb>
+              <span class="social-card__number">03</span>
+              <span class="social-card__badge social-card__badge--ig"><svg class="ico"><use href="#i-ig"/></svg> Reel</span>
+              <span class="social-card__play" aria-hidden="true"><svg class="ico"><use href="#i-right"/></svg></span>
+            </button>
+            <div class="social-card__body">
+              <small>Reel da CS Promotora</small>
+              <h3>Mais um conteúdo da nossa página</h3>
+              <p>Assista ao conteúdo e veja a publicação completa no perfil oficial da CS Promotora.</p>
+              <button class="social-link-button" type="button" data-instagram-open data-embed="https://www.instagram.com/reel/DJmecvKtKxD/embed" data-url="https://www.instagram.com/reel/DJmecvKtKxD/">Reproduzir Reel <svg class="ico"><use href="#i-right"/></svg></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="social-admin" id="socialAdmin" hidden>
+          <button class="text-button" id="abrirGerenciador" type="button">Gerenciar publicações próprias <span>+</span></button>
+          <p>Área administrativa. Nesta versão, as publicações ficam salvas neste navegador. Para produção, a próxima etapa é autenticação real + banco de dados.</p>
+        </div>
+
+        <div class="social-grid social-grid--manual" id="manualPosts" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="sobre band band--dark" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="wrap sobre__grid">
+        <figure class="sobre__foto image-frame">
+          <!-- FOTO 02: substitua assets/foto-fachada.jpg pela foto da fachada da loja. -->
+          <img src="assets/foto-fachada.jpg" alt="Fachada da loja da CS Promotora em Quixadá" width="1000" height="1100" loading="lazy">
+          <div class="image-fallback"><span>CS</span><small>Foto da fachada<br>assets/foto-fachada.jpg</small></div>
+          <figcaption>Aqui você encontra a gente de portas abertas.</figcaption>
+        </figure>
+
+        <div class="sobre__texto">
+          <h2 id="sobre-titulo">Uma promotora de crédito com endereço, rosto e telefone.</h2>
+          <p class="lead">Toda conquista começa com uma boa conversa.</p>
+          <p>Cada pessoa chega com uma história, um objetivo e um momento diferente. Por isso unimos a experiência no mercado de crédito a um atendimento próximo, responsável e sem complicação.</p>
+          <p>Nosso compromisso é explicar as possibilidades com clareza e acompanhar você durante o processo, respeitando o seu perfil e as condições de cada instituição financeira.</p>
+        </div>
+      </div>
+
+      <div class="wrap fatos">
+        <div class="fato">
+          <span class="fato__n" data-count="12" data-suffix="+">12+</span>
+          <span class="fato__l">anos atuando no mercado de crédito</span>
+        </div>
+        <div class="fato">
+          <span class="fato__n" data-count="+4">+ de 4</span>
+          <span class="fato__l">frentes de atendimento: INSS, servidor, CLT e outras</span>
+        </div>
+        <div class="fato">
+          <span class="fato__n" data-count="2">2</span>
+          <span class="fato__l">números de WhatsApp, além da loja no Centro</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODALIDADES ============ -->
+    <section class="modalidades" id="modalidades" aria-labelledby="modalidades-titulo">
+      <div class="wrap">
+        <div class="titulo-duplo">
+          <h2 id="modalidades-titulo">Escolha por onde começar.</h2>
+          <p>Cada modalidade tem regras próprias. A disponibilidade depende de análise e das condições de cada convênio ou instituição.</p>
+        </div>
+
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Modalidades de crédito">
+            <button class="tab" role="tab" type="button" id="tab-inss" aria-controls="painel-inss" aria-selected="true">
+              <strong>Consignado INSS</strong><small>Aposentados e pensionistas</small>
+            </button>
+            <button class="tab" role="tab" type="button" id="tab-servidor" aria-controls="painel-servidor" aria-selected="false" tabindex="-1">
+              <strong>Servidor público</strong><small>Municipal, estadual e federal</small>
+            </button>
+            <button class="tab" role="tab" type="button" id="tab-clt" aria-controls="painel-clt" aria-selected="false" tabindex="-1">
+              <strong>Crédito do Trabalhador</strong><small>Carteira assinada (CLT)</small>
+            </button>
+            <button class="tab" role="tab" type="button" id="tab-outras" aria-controls="painel-outras" aria-selected="false" tabindex="-1">
+              <strong>Outras soluções</strong><small>Converse com a equipe</small>
+            </button>
+          </div>
+
+          <div class="tabs__paineis">
+            <div class="painel" role="tabpanel" id="painel-inss" aria-labelledby="tab-inss" tabindex="0">
+              <h3>Consignado para aposentados e pensionistas</h3>
+              <p>Orientação para quem recebe benefício do INSS e quer conhecer as possibilidades disponíveis antes de decidir qualquer coisa.</p>
+              <ul class="checks">
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Conversamos sobre o seu momento antes de falar em proposta</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>As condições vêm da instituição financeira responsável</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Você avalia com calma e só segue se fizer sentido</li>
+              </ul>
+              <a class="btn btn--dark js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Sou aposentado(a) ou pensionista do INSS e gostaria de conversar sobre o consignado.">
+                <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Conversar sobre INSS</span>
+              </a>
+            </div>
+
+            <div class="painel" role="tabpanel" id="painel-servidor" aria-labelledby="tab-servidor" tabindex="0" hidden>
+              <h3>Consignado para servidor público</h3>
+              <p>Atendimento para servidores municipais, estaduais e federais, sempre conforme o convênio e a margem disponível.</p>
+              <ul class="checks">
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Verificamos se o seu órgão tem convênio com as instituições</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Explicamos como a margem entra na conta</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Você recebe as condições antes de contratar</li>
+              </ul>
+              <a class="btn btn--dark js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Sou servidor(a) público(a) e gostaria de conversar sobre o consignado.">
+                <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Conversar como servidor</span>
+              </a>
+            </div>
+
+            <div class="painel" role="tabpanel" id="painel-clt" aria-labelledby="tab-clt" tabindex="0" hidden>
+              <h3>Crédito do Trabalhador</h3>
+              <p>Consulte as opções de crédito voltadas a trabalhadores com carteira assinada e entenda o que se aplica ao seu caso.</p>
+              <ul class="checks">
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Orientação simples, sem termos difíceis</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Análise feita pela instituição financeira</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Acompanhamento da nossa equipe em cada etapa</li>
+              </ul>
+              <a class="btn btn--dark js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Sou trabalhador(a) CLT e gostaria de conversar sobre o Crédito do Trabalhador.">
+                <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Conversar como CLT</span>
+              </a>
+            </div>
+
+            <div class="painel" role="tabpanel" id="painel-outras" aria-labelledby="tab-outras" tabindex="0" hidden>
+              <h3>Outras soluções de crédito</h3>
+              <p>Não achou o seu caso por aqui? Conte a sua necessidade e a equipe mostra quais modalidades estão disponíveis para você.</p>
+              <ul class="checks">
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Você explica o objetivo, a gente indica o caminho</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Sem compromisso para tirar dúvidas</li>
+                <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Atendimento na loja ou pelo WhatsApp</li>
+              </ul>
+              <a class="btn btn--dark js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Gostaria de saber quais soluções de crédito estão disponíveis para o meu caso.">
+                <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Falar com a equipe</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="nota">A CS Promotora atua como correspondente/promotora de crédito. A concessão, taxas, prazos e aprovação são definidos pela instituição financeira responsável, após análise.</p>
+      </div>
+    </section>
+
+    <!-- ============ PASSO A PASSO ============ -->
+    <section class="passos band band--dark" id="passo-a-passo" aria-labelledby="passos-titulo">
+      <svg class="serra serra--topo" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+        <use class="serra__fundo" href="#serra-fundo"/>
+        <use class="serra__frente" href="#serra-frente"/>
+      </svg>
+
+      <div class="wrap">
+        <h2 id="passos-titulo">Da primeira mensagem à decisão, você acompanha tudo.</h2>
+
+        <ol class="trilha">
+          <li>
+            <span class="trilha__n">1</span>
+            <h3>Você chama a CS</h3>
+            <p>Conte o que procura e tire as primeiras dúvidas com a nossa equipe, na loja ou pelo WhatsApp.</p>
+          </li>
+          <li>
+            <span class="trilha__n">2</span>
+            <h3>Entendemos o seu perfil</h3>
+            <p>Verificamos quais possibilidades podem estar disponíveis para o seu caso.</p>
+          </li>
+          <li>
+            <span class="trilha__n">3</span>
+            <h3>Você avalia com clareza</h3>
+            <p>Antes de contratar, confira as condições apresentadas pela instituição financeira.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ COMPROMISSOS ============ -->
+    <section class="compromissos" id="compromissos" aria-labelledby="compromissos-titulo">
+      <div class="wrap compromissos__grid">
+        <div>
+          <h2 id="compromissos-titulo">Crédito é sobre pessoas. E confiança se constrói.</h2>
+          <p class="compromissos__texto">Não trabalhamos com fórmulas prontas. Trabalhamos com escuta, transparência e com o cuidado de tornar cada etapa mais simples de entender.</p>
+        </div>
+
+        <ul class="lista-valores">
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+            <div><h3 class="compromissos-subtitulo">Transparência</h3><p>Informações claras para você decidir com consciência.</p></div>
+          </li>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+            <div><h3 class="compromissos-subtitulo">Proximidade</h3><p>Atendimento atencioso, com pessoas de verdade.</p></div>
+          </li>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+            <div><h3 class="compromissos-subtitulo">Responsabilidade</h3><p>Respeito ao seu momento e às condições de cada operação.</p></div>
+          </li>
+          <li>
+            <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+            <div><h3 class="compromissos-subtitulo">Experiência</h3><p>Mais de 12 anos atuando no mercado de crédito.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <!-- SUBSTITUA os textos abaixo por depoimentos reais (com autorização dos clientes). -->
+    <section class="depoimentos" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="wrap">
+        <div class="depoimentos__topo">
+          <h2 id="depoimentos-titulo">Quem já conversou com a CS.</h2>
+          <div class="setas" aria-label="Navegar pelos depoimentos">
+            <button type="button" id="depPrev" aria-label="Depoimento anterior"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
+            <button type="button" id="depNext" aria-label="Próximo depoimento"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimentos__viewport">
+        <div class="depoimentos__trilho" id="depTrilho" tabindex="0" aria-label="Depoimentos de clientes">
+          <article class="depo">
+            <p>Escreva aqui o depoimento de um cliente da CS Promotora, com as palavras dele.</p>
+            <footer><span class="depo__ini" aria-hidden="true">A</span><div><strong>Nome do cliente</strong><small>Modalidade atendida</small></div></footer>
+          </article>
+          <article class="depo">
+            <p>Escreva aqui o segundo depoimento. Frases curtas e específicas funcionam melhor.</p>
+            <footer><span class="depo__ini" aria-hidden="true">B</span><div><strong>Nome do cliente</strong><small>Modalidade atendida</small></div></footer>
+          </article>
+          <article class="depo">
+            <p>Escreva aqui o terceiro depoimento, contando como foi o atendimento.</p>
+            <footer><span class="depo__ini" aria-hidden="true">C</span><div><strong>Nome do cliente</strong><small>Modalidade atendida</small></div></footer>
+          </article>
+          <article class="depo">
+            <p>Escreva aqui o quarto depoimento, se quiser incluir mais um.</p>
+            <footer><span class="depo__ini" aria-hidden="true">D</span><div><strong>Nome do cliente</strong><small>Modalidade atendida</small></div></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARCEIROS ============ -->
+    <!-- Coloque os logos em assets/parceiros/parceiro-1.png ... parceiro-8.png (ou duplique/remova linhas). -->
+    <section class="parceiros" id="parceiros" aria-labelledby="parceiros-titulo">
+      <div class="wrap">
+        <h2 id="parceiros-titulo">Instituições parceiras</h2>
+      </div>
+      <div class="marquee" id="marquee">
+        <ul class="marquee__trilho">
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-1.png" alt="Logo do parceiro 1" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-2.png" alt="Logo do parceiro 2" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-3.png" alt="Logo do parceiro 3" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-4.png" alt="Logo do parceiro 4" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-5.png" alt="Logo do parceiro 5" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-6.png" alt="Logo do parceiro 6" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-7.png" alt="Logo do parceiro 7" height="44" loading="lazy"><span>Logo</span></li>
+          <li class="logo-slot"><img src="assets/parceiros/parceiro-8.png" alt="Logo do parceiro 8" height="44" loading="lazy"><span>Logo</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS + EQUIPE ============ -->
+    <section class="duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="wrap duvidas__grid">
+        <figure class="duvidas__foto image-frame">
+          <!-- FOTO 03: substitua assets/foto-equipe.jpg pela foto da equipe. -->
+          <img src="assets/foto-equipe.jpg" alt="Equipe da CS Promotora" width="900" height="1100" loading="lazy">
+          <div class="image-fallback"><span>CS</span><small>Foto da equipe<br>assets/foto-equipe.jpg</small></div>
+          <figcaption>Perto de você</figcaption>
+        </figure>
+
+        <div class="duvidas__texto">
+          <h2 id="duvidas-titulo">Perguntas que costumam aparecer.</h2>
+
+          <div class="faq">
+            <details>
+              <summary>A CS Promotora é um banco?</summary>
+              <p>Não. A CS atua como correspondente/promotora de crédito. Taxas, prazos e aprovação são definidos pela instituição financeira responsável, após análise.</p>
+            </details>
+            <details>
+              <summary>Como vou saber as condições da minha operação?</summary>
+              <p>A equipe apresenta as condições informadas pela instituição financeira antes da contratação, para que você avalie com clareza.</p>
+            </details>
+            <details>
+              <summary>Preciso ir até a loja?</summary>
+              <p>Você pode começar pelo WhatsApp ou visitar a loja na Travessa Tiradentes, 181, no Centro de Quixadá, próximo ao Bradesco.</p>
+            </details>
+            <details>
+              <summary>Quais documentos preciso ter?</summary>
+              <p>Depende da modalidade e da instituição. Ao falar com a equipe, você recebe a lista do que costuma ser pedido para o seu caso.</p>
+            </details>
+          </div>
+
+          <a class="btn btn--dark js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Tenho uma dúvida sobre crédito.">
+            <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg><span>Perguntar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIMULAÇÃO ============ -->
+    <section class="simulacao band band--dark" id="simulacao" aria-labelledby="simulacao-titulo">
+      <div class="simulacao__glow" aria-hidden="true"></div>
+      <div class="wrap simulacao__grid">
+        <div class="simulacao__copy reveal">
+          <p class="eyebrow eyebrow--light">Simulação de crédito</p>
+          <h2 id="simulacao-titulo">Conte um pouco sobre o que você procura.</h2>
+          <p>Preencha os dados abaixo e envie. A equipe da CS recebe tudo organizado no WhatsApp para continuar o atendimento com você.</p>
+          <div class="simulacao__steps">
+            <span><b>01</b> Você informa seu perfil</span>
+            <span><b>02</b> A equipe analisa as informações</span>
+            <span><b>03</b> Você recebe orientação pelo WhatsApp</span>
+          </div>
+        </div>
+
+        <form class="simulacao-form reveal" id="simulacaoForm">
+          <div class="form-grid">
+            <label><span>Nome completo</span><input name="nome" type="text" autocomplete="name" required placeholder="Como podemos chamar você?"></label>
+            <label><span>WhatsApp</span><input name="telefone" type="number" inputmode="tel" autocomplete="tel" required placeholder="(88) 99999-9999"></label>
+            <label><span>Perfil</span><select name="perfil" required><option value="">Selecione</option><option>Aposentado(a) ou pensionista do INSS</option><option>Servidor(a) público(a)</option><option>Trabalhador(a) CLT</option><option>Outro perfil</option></select></label>
+            <label><span>Cidade</span><input name="cidade" type="text" autocomplete="address-level2" placeholder="Sua cidade"></label>
+            <label><span>Valor aproximado</span><input name="valor" type="number" inputmode="decimal" placeholder="Ex.: R$ 5.000"></label>
+            <label><span>Motivo / modalidade</span><input name="objetivo" type="text" placeholder="Ex.: consignado, cartão, empréstimo..."></label>
+            <label class="form-field--full"><span>Observações</span><textarea name="observacoes" rows="4" placeholder="Conte algo que possa ajudar a equipe a entender seu caso."></textarea></label>
+          </div>
+          <label class="checkline"><input name="consentimento" type="checkbox" required><span>Autorizo o envio destas informações para a CS Promotora pelo WhatsApp para continuidade do atendimento.</span></label>
+          <button class="btn btn--primary btn--lg" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Enviar simulação pelo WhatsApp</button>
+          <p class="form-note">Não há aprovação automática. A operação depende de análise e das condições da instituição financeira responsável.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="contato band band--dark" id="contato" aria-labelledby="contato-titulo">
+      <svg class="serra serra--topo" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+        <use class="serra__fundo" href="#serra-fundo"/>
+        <use class="serra__frente" href="#serra-frente"/>
+      </svg>
+
+      <div class="wrap contato__grid">
+        <div class="contato__chamada">
+          <h2 id="contato-titulo">Vamos conversar sobre o seu próximo passo?</h2>
+          <p>Fale com a CS Promotora. A nossa equipe está pronta para orientar você.</p>
+          <a class="btn btn--primary btn--lg js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Vim pelo site da CS Promotora e gostaria de conversar.">
+            <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Chamar no WhatsApp</span>
+          </a>
+          <p class="telefones">
+            <a class="js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Vim pelo site da CS Promotora.">(88) 9688-6218</a>
+            <a class="js-whatsapp" href="https://wa.me/558881641919" data-wa-number="558881641919" data-wa="Olá! Vim pelo site da CS Promotora.">(88) 8164-1919</a>
+          </p>
+        </div>
+
+        <address class="endereco">
+          <h3>Estamos em Quixadá.</h3> 
+          <p>Travessa Tiradentes, nº 181, Centro<br>Próximo ao Bradesco<br>CEP 63900-129, Quixadá, CE</p>
+          <ul>
+            <li><a class="js-instagram" href="https://www.instagram.com/CS_promotora/"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg><span>@CS_promotora</span><svg class="ico ico--fim" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+            <li><a class="js-email" href="mailto:cspromotorace@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span>cspromotorace@gmail.com</span><svg class="ico ico--fim" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Travessa+Tiradentes+181+Quixad%C3%A1+CE" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Ver no mapa</span><svg class="ico ico--fim" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+          </ul>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="rodape">
+    <div class="wrap rodape__topo">
+      <a class="logo" href="#sobre" aria-label="CS Promotora, voltar ao topo">
+        <span class="logo__mark" aria-hidden="true">CS</span>
+        <span class="logo__name">Promotora</span>
+      </a>
+      <p>Mais que crédito, uma relação de confiança.</p>
+      <a class="rodape__topo-link" href="#sobre" data-section="sobre">Voltar ao topo</a>
+    </div>
+    <div class="wrap rodape__base">
+      <span>© <span id="ano">2026</span> CS Promotora. Todos os direitos reservados.</span>
+      <span>CNPJ: 20.619.878/0001-17</span>
+      <span class="rodape__aviso">A CS Promotora não é instituição financeira. Operações sujeitas à análise e às condições da instituição responsável.</span>
+    </div>
+  </footer>
+
+  <!-- ============ ATALHO DE CONTATO ============ -->
+  <div class="fab" id="fab">
+    <ul class="fab__opcoes" id="fabOpcoes">
+      <li><a class="js-email" href="mailto:cspromotorace@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>E-mail</a></li>
+      <li><a class="js-instagram" href="https://www.instagram.com/CS_promotora/"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></li>
+      <li><a class="js-whatsapp" href="https://wa.me/558896886218" data-wa="Olá! Vim pelo site da CS Promotora e quero falar com vocês."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a></li>
+    </ul>
+    <button class="fab__botao" id="fabBotao" type="button" aria-expanded="false" aria-controls="fabOpcoes" aria-label="Abrir opções de contato">
+      <svg class="ico ico--abrir" aria-hidden="true"><use href="#i-wa"/></svg>
+      <svg class="ico ico--fechar" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+
+  <!-- ============ GERENCIADOR LOCAL DE PUBLICAÇÕES ============ -->
+
+  <div class="instagram-modal" id="instagramModal" hidden>
+    <div class="instagram-modal__backdrop" data-instagram-close></div>
+    <section class="instagram-modal__panel" role="dialog" aria-modal="true" aria-labelledby="instagramModalTitulo">
+      <button class="instagram-modal__close" type="button" aria-label="Fechar publicação" data-instagram-close><svg class="ico"><use href="#i-close"/></svg></button>
+      <div class="instagram-modal__head">
+        <span class="social-card__badge social-card__badge--ig"><svg class="ico"><use href="#i-ig"/></svg> Instagram da CS</span>
+        <h2 id="instagramModalTitulo">Publicação da CS Promotora</h2>
+      </div>
+      <div class="instagram-modal__viewer" id="instagramViewer">
+        <div class="instagram-modal__loading"><span class="instagram-modal__spinner"></span><span>Carregando conteúdo do Instagram…</span></div>
+      </div>
+      <div class="instagram-modal__actions">
+        <a class="btn btn--primary" id="instagramOpenOriginal" href="#" target="_blank" rel="noopener noreferrer">Abrir no Instagram <svg class="ico"><use href="#i-up-right"/></svg></a>
+      </div>
+    </section>
+  </div>
+
+  <div class="admin-modal" id="adminModal" hidden>
+    <div class="admin-modal__backdrop" data-admin-close></div>
+    <section class="admin-modal__panel" role="dialog" aria-modal="true" aria-labelledby="adminTitulo">
+      <button class="admin-modal__close" type="button" aria-label="Fechar" data-admin-close><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">Conteúdo próprio</p>
+      <h2 id="adminTitulo">Adicionar publicação</h2>
+      <p class="admin-modal__intro">Este gerenciador funciona sem servidor e grava as publicações somente neste navegador.</p>
+      <form id="postForm" class="admin-form">
+        <label><span>Título</span><input name="titulo" required maxlength="90" placeholder="Ex.: Novo conteúdo da CS"></label>
+        <label><span>Texto curto</span><textarea name="texto" rows="3" maxlength="180" placeholder="Uma frase para acompanhar a publicação."></textarea></label>
+        <label><span>URL da imagem (opcional)</span><input name="imagem" type="url" placeholder="https://..."></label>
+        <label><span>Link da publicação (opcional)</span><input name="link" type="url" placeholder="https://..."></label>
+        <div class="admin-form__actions"><button class="btn btn--primary" type="submit">Adicionar</button><button class="btn btn--ghost-dark" type="button" data-admin-close>Cancelar</button></div>
+      </form>
+      <button class="text-button text-button--danger" id="limparPosts" type="button">Apagar publicações próprias</button>
+    </section>
+  </div>
+
+  <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>

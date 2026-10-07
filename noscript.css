@@ -1,0 +1,4 @@
+/* Carregado só quando o JavaScript está desativado: mostra as fotos sem depender do script. */
+.image-frame img, .logo-slot img { opacity: 1; }
+.image-fallback, .logo-slot span { display: none; }
+.marquee { overflow-x: auto; }
